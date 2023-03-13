@@ -28,13 +28,11 @@ public class UserServiceImpl implements UserService {
         return userDAO.updateUser(id, user);
     }
 
-    @Transactional
     @Override
     public List<User> listOfUsers() {
         return userDAO.listOfUsers();
     }
 
-    @Transactional
     @Override
     public User findById(int id) {
         return userDAO.findById(id);
